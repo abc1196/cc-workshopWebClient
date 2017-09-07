@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/main.css">
+<title>Fútbol Profesional Colombiano</title>
+</head>
+<body>
+
+	<h1>
+		<img src="imgs/LigaAguila.png" style="width: 120px; height: 120px;">
+		Categoría Primera A
+	</h1>
+	<div ng-app="apiApp" ng-controller="apiAppCtrl">
+		<h2>{{error}}</h2>
+		<ul>
+			<li ng-repeat="equipo in equipos"><p>{{equipo.nombre}}</p> <span
+				class="help-tip"> <span> Año de fundación:
+						{{equipo.anoFundacion}} <br> Estrellas: {{equipo.estrellas}}
+				</span>
+			</span></li>
+		</ul>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+	<script src="scripts/apiApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+	background-color: #00796B;
+}
+
+ul {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+li {
+	font-familiy: sans-serif;
+	font-size: 16px;
+	/* make list elements fall inline as block elements */
+	position: relative;
+	display: inline-block;
+	/* next two lines only for display purposes */
+	width: 180px;
+	height: 80px;
+	margin: 5px;
+	background-color: #00796B;
+	color: white;
+	margin: 5px;
+}
+
+p {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+aside {
+	width: 200px;
+	float: right;
+	padding: 20px;
+	display: table-cell;
+}
+
+aside h2 {
+	margin-bottom: 3px;
+}
+
+div {
+	text-align: justify;
+	color: black;
+	background-color: white;
+}
+
+h1 {
+	font-size: 48px;
+	color: white;
+	font-family: sans-serif;
+	padding: 10px;
+	text-align: center;
+}
+
+img {
+	vertical-align: middle
+}
+
+h2 {
+	font-family: sans-serif;
+}
+
+section {
+	display: table-cell;
+}
+
+.help-tip {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	background-color: #B2DFDB;;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 26px;
+	cursor: default;
+}
+
+.help-tip:before {
+	content: '?';
+	font-weight: bold;
+	color: #fff;
+}
+
+.help-tip:hover span {
+	display: block;
+	transform-origin: 100% 0%;
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+.help-tip span {
+	display: none;
+	text-align: left;
+	background-color: #1E2021;
+	padding: 5px;
+	width: 200px;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	left: -4px;
+	color: #FFF;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.help-tip span:before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-bottom-color: #1E2021;
+	left: 10px;
+	top: -12px;
+}
+
+.help-tip span:after {
+	width: 100%;
+	height: 40px;
+	content: '';
+	position: absolute;
+	top: -40px;
+	left: 0;
+}
